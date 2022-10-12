@@ -64,6 +64,7 @@ import {
 } from "@gitcoin/passport-platforms";
 
 import { BrightIdProvider } from "./providers/brightid";
+import { FractalIdProvider } from "./providers/fractalId";
 
 import { ClearTextSimpleProvider } from "./providers/clearTextSimple";
 import { ClearTextTwitterProvider } from "./providers/clearTextTwitter";
@@ -251,6 +252,7 @@ export const providers = new Providers([
   new Lens.LensProfileProvider(),
   new ZkSync.ZkSyncProvider(),
   new GnosisSafe.GnosisSafeProvider(),
+  new FractalIdProvider(),
 ]);
 
 // create the app and run on port
